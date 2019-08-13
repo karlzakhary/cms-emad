@@ -8,7 +8,7 @@ from .models import *
 
 class ResourceAdmin(admin.ModelAdmin):
     model = Resource
-    list_display = ('name', 'registered')
+    list_display = ('name', 'registered','remaining_time')
     def has_add_permission(self, request):
         return True
 
